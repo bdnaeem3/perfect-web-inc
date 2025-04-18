@@ -1,0 +1,48 @@
+.card-slider {
+  background-color: #0a0a0a;
+  padding: 1rem 0.25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 0.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card-slider-container h1 {
+  font-size: 1.2rem;
+  
+  margin: 0 auto;
+  
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: center;
+}
+
+.movies-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.movies-wrapper > div {
+  width: calc((100% - 4.5rem) / 4); /* 3 gaps * 1.5rem */
+  flex-shrink: 0;
+}

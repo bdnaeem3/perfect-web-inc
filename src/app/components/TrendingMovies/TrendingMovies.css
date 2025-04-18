@@ -1,0 +1,63 @@
+.card-slider {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-slider h1 {
+    color: rgb(255, 187, 0);
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-slider-container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+   
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+   justify-content: center;
+    width: 100px;
+    gap: 20px;
+}
+
+.left-button,
+.right-button {
+    background-color: rgb(255, 187, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-button:disabled,
+.right-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.movies-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.movies-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+
