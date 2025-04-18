@@ -61,7 +61,7 @@ const MovieSection = ({
         ...sx
       }}
     >
-    
+
 
       <Box
         sx={{
@@ -88,7 +88,7 @@ const MovieSection = ({
         >
           {title}
         </Typography>
-        
+
         <Box sx={{ display: 'flex', gap: { xs: 0.5, sm: 1 } }}>
           <IconButton
             onClick={onPrevClick}
@@ -106,11 +106,14 @@ const MovieSection = ({
               }
             }}
           >
-            <ArrowLeftIcon sx={{
+            <img src='/assets/icons/next.png' alt='' width="12" height="19" style={{ 
+              transform: 'rotate(180deg)'
+             }} />
+            {/* <ArrowLeftIcon sx={{
               fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }
-            }} />
+            }} /> */}
           </IconButton>
-          
+
           <IconButton
             onClick={onNextClick}
             disabled={!canNext}
@@ -127,9 +130,10 @@ const MovieSection = ({
               }
             }}
           >
-            <ArrowRightIcon sx={{
+            <img src='/assets/icons/next.png' alt='' width="12" height="19" />
+            {/* <ArrowRightIcon sx={{
               fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }
-            }} />
+            }} /> */}
           </IconButton>
         </Box>
       </Box>
